@@ -1,0 +1,286 @@
+.hero-section {
+  background-image: url(images/headphones_hero_1.jpg);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 27px 200px;
+}
+
+nav img {
+  width: 161px;
+  height: 32px;
+}
+
+nav ul {
+  display: flex;
+  
+  list-style: none;
+  justify-content: space-between;
+  width: 255px;
+  
+}
+
+nav ul li a {
+  font-family: Source Sans Pro;
+font-size: 12px;
+font-weight: 700;
+line-height: 15.08px;
+text-align: left;
+color: #FFFFFF;
+text-decoration: none;
+cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #FF6565;
+}
+
+.hero-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 290px;
+}
+
+.hero-section h1 {
+  font-family: Source Sans Pro;
+font-size: 32px;
+font-weight: 700;
+line-height: 40.22px;
+text-align: center;
+color: white;
+}
+
+.hero-section h2 {
+  font-family: Source Sans Pro;
+font-size: 16px;
+font-weight: 700;
+line-height: 20.11px;
+text-align: center;
+color: white;
+}
+
+.hero-section button { 
+  width: 162px;
+  height: 44px;
+  margin-top: 50px;
+  background-color: #FF6565;
+  color: white;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  
+}
+
+.hero-section button:hover {
+  opacity: 0.9;
+}
+
+.hero-section p {
+  font-family: Source Sans Pro;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color: white;
+margin: 55px 382px 114px 382px ;
+
+}
+
+
+
+.what-we-do h2 {
+  padding-top: 110px;
+  font-family: Source Sans Pro;
+font-size: 32px;
+line-height: 37.5px;
+text-align: center;
+color: black;
+
+}
+
+.what-we-do p {
+  font-family: Source Sans Pro;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color: black;
+padding: 0 382px;
+margin-top: 40px;
+
+}
+
+.wwd-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.wwd-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: 100px 50px;
+}
+
+.wwd-cards img {
+  width: 67.59px;
+height: 76.8px;
+
+
+}
+
+.wwd-cards h3 {
+  font-family: Source Sans Pro;
+font-size: 18px;
+line-height: 26px;
+text-align: center;
+color: black;
+margin-top: 20px;
+font-weight: 500;
+
+
+}
+
+.wwd-cards h4 {
+  font-family: Source Sans Pro;
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color: black;
+margin-top: 10px;
+
+}
+
+.testimonials {
+  background-image: url(images/headphones_hero_2.jpg);
+}
+
+.testimonials h2 {
+  padding-top: 110px;
+  font-family: Source Sans Pro;
+font-size: 32px;
+line-height: 37.5px;
+text-align: center;
+color: white;
+
+}
+
+.testimonials p {
+  font-family: Source Sans Pro;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color: white;
+padding: 0 382px;
+margin-top: 40px;
+
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.testimonials-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: 100px 50px;
+  position: relative;
+}
+
+.testimonials img {
+  width: 190px;
+height: 190px;
+gap: 0px;
+opacity: 0px;
+
+
+
+}
+
+.testimonials h3 {
+  position: absolute;
+  font-family: Source Sans Pro;
+font-size: 46px;
+font-weight: 700;
+line-height: 26px;
+text-align: center;
+color: white;
+top: 70px;
+
+}
+
+.testimonials h4 {
+  font-family: Source Sans Pro;
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color: white;
+top: 116px;
+position: absolute;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.contact h1 {
+  font-family: Source Sans Pro;
+font-size: 32px;
+line-height: 37.5px;
+text-align: center;
+padding-top: 100px;
+
+}
+
+form input { 
+  width: 335px;
+height: 29px;
+top: 96px;
+border: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+
+margin-top: 37px;
+
+}
+form input::placeholder {
+  font-family: Source Sans Pro;
+font-size: 14px;
+line-height: 16.41px;
+font-weight: 600;
+text-align: left;
+color: black;
+}
+
+form button {
+  margin-top: 50px;
+  width: 162px;
+height: 44px;
+border-radius: 22px;
+border: none;
+color: white;
+background-color: #FF6565;
+;
+margin-bottom: 150px;
+}
