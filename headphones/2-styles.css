@@ -1,238 +1,267 @@
-.hero-section {
-  background-image: url(images/headphones_hero_1.jpg);
-}
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 27px 200px;
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav img {
-  width: 161px;
-  height: 32px;
+/* Variables */
+:root {
+    --main-bg-color: #333; /* Default bg color (image will replace this) */
+    --main-text-color: #fff;
+    --btn-color: #FF6565;
+    --btn-hover-opacity: 0.9;
+    --max-width: 1000px;
 }
 
-nav ul {
-  display: flex;
-  
-  list-style: none;
-  justify-content: space-between;
-  width: 255px;
-  
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--main-text-color);
 }
 
-nav ul li a {
-  font-family: Source Sans Pro;
-font-size: 12px;
-font-weight: 700;
-line-height: 15.08px;
-text-align: left;
-color: #FFFFFF;
-text-decoration: none;
-cursor: pointer;
+/* Container to center content */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-nav ul li a:hover {
-  color: #FF6565;
+/* Header (Logo and Navigation) */
+.header {
+    display: flex;
+    justify-content: space-between; /* Logo on left, Nav on right */
+    align-items: center;
+    padding: 20px 0; /* Add some padding */
+    position: absolute; /* Position at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100; /* Ensure it stays on top of background */
 }
 
-.hero-section-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 290px;
+/* Logo Styling */
+.logo img {
+    width: 150px; /* Adjust logo size */
+    height: auto;
+    margin-left: 170px;
 }
 
-.hero-section h1 {
-  font-family: Source Sans Pro;
-font-size: 32px;
-font-weight: 700;
-line-height: 40.22px;
-text-align: center;
-color: white;
+/* Navigation Links */
+.nav a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-.hero-section h2 {
-  font-family: Source Sans Pro;
-font-size: 16px;
-font-weight: 700;
-line-height: 20.11px;
-text-align: center;
-color: white;
+.nav a:hover {
+    color: var(--btn-color);
 }
 
-.hero-section button { 
-  width: 162px;
-  height: 44px;
-  margin-top: 50px;
-  background-color: #FF6565;
-  color: white;
-  border: none;
-  border-radius: 22px;
-  cursor: pointer;
-  
+/* Hero Section */
+.hero {
+    background-image: url('headphones_hero_1.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full height of viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
-.hero-section button:hover {
-  opacity: 0.9;
+/* Hero Content Styling */
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.hero-section p {
-  font-family: Source Sans Pro;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-text-align: center;
-color: white;
-margin: 55px 382px 114px 382px ;
-
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
+/* CTA Button */
+.cta-button {
+    background-color: var(--btn-color);
+    color: var(--main-text-color);
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border-radius: 50px;
+}
 
+.cta-button:hover,
+.cta-button:active {
+    opacity: var(--btn-hover-opacity);
+}
+
+.under-cta {
+    text-align: center;
+}
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .header {
+        flex-direction: column; /* Stack logo and nav vertically on small screens */
+        align-items: center;
+    }
+
+    .nav {
+        margin-top: 10px; /* Add space between logo and nav */
+    }
+}
+
+/* Section styling */
+.what-we-do {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
 
 .what-we-do h2 {
-  padding-top: 110px;
-  font-family: Source Sans Pro;
-font-size: 32px;
-line-height: 37.5px;
-text-align: center;
-color: black;
-
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .what-we-do p {
-  font-family: Source Sans Pro;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-text-align: center;
-color: black;
-padding: 0 382px;
-margin-top: 40px;
-
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #666;
 }
 
-.wwd-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+/* Feature styling */
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.wwd-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  margin: 100px 50px;
+.feature {
+    flex: 1 1 22%;
+    text-align: center;
+    padding: 20px;
 }
 
-.wwd-cards img {
-  width: 67.59px;
-height: 76.8px;
-
-
+.feature img {
+    width: 80px;
+    margin-bottom: 20px;
 }
 
-.wwd-cards h3 {
-  font-family: Source Sans Pro;
-font-size: 18px;
-line-height: 26px;
-text-align: center;
-color: black;
-margin-top: 20px;
-font-weight: 500;
-
-
+.feature h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.wwd-cards h4 {
-  font-family: Source Sans Pro;
-font-size: 14px;
-font-weight: 400;
-line-height: 26px;
-text-align: center;
-color: black;
-margin-top: 10px;
-
+.feature p {
+    color: #666;
 }
 
-.testimonials {
-  background-image: url(images/headphones_hero_2.jpg);
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+    .features {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .feature {
+        flex: 1 1 100%;
+    }
+
+    .what-we-do h2 {
+        font-size: 28px;
+    }
+}
+.results {
+    background-image: url('headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
 }
 
-.testimonials h2 {
-  padding-top: 110px;
-  font-family: Source Sans Pro;
-font-size: 32px;
-line-height: 37.5px;
-text-align: center;
-color: white;
-
+.results .content {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: white;
 }
 
-.testimonials p {
-  font-family: Source Sans Pro;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-text-align: center;
-color: white;
-padding: 0 382px;
-margin-top: 40px;
-
+.results h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-.testimonials-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+.results p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
 }
 
-.testimonials-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  margin: 100px 50px;
-  position: relative;
+.pentagons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.testimonials img {
-  width: 190px;
-height: 190px;
-gap: 0px;
-opacity: 0px;
-
-
-
+.pentagon {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Center vertically */
+    align-items: center;      /* Center horizontally */
+    text-align: center;
+    padding: 10px;            /* Adjust padding for spacing */
 }
 
-.testimonials h3 {
-  position: absolute;
-  font-family: Source Sans Pro;
-font-size: 46px;
-font-weight: 700;
-line-height: 26px;
-text-align: center;
-color: white;
-top: 70px;
-
+.pentagon p.percentage {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
 }
 
-.testimonials h4 {
-  font-family: Source Sans Pro;
-font-size: 14px;
-font-weight: 400;
-line-height: 26px;
-text-align: center;
-color: white;
-top: 116px;
-position: absolute;
+.pentagon p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+}
 
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .pentagons {
+        flex-direction: column;
+    }
+
+    .pentagon {
+        margin-bottom: 20px;
+    }
 }
